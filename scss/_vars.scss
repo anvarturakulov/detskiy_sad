@@ -1,0 +1,11 @@
+$text:#4B4B4B;
+$blue:#02133C;
+$bg:#f5f5f5;
+$red:#C40B0B;
+
+
+@mixin ibg{
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
