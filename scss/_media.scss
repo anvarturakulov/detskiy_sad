@@ -25,6 +25,7 @@
             }
         }
     }
+    
 }
 
 
@@ -44,7 +45,7 @@
             left: 5%;
             right: 5%;
             position: absolute;
-            background-color: #fff;
+            background-color: #5d62b5;
             padding: 80px 50px 20px;
             
         }
@@ -68,6 +69,8 @@
             line-height: 36px;
             font-weight: 900;
             color: #fff;
+            text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
+            #000 -1px 1px 0, #000 1px -1px 0;
             max-width: 340px;
             margin-bottom: 30px;
         }
@@ -78,7 +81,12 @@
         }
     
     }
+
+    .advantages{
+        margin-top: 650px;
+    }
 }
+
 
 @media (max-width:1100px){
     .advantages__inner{
@@ -87,7 +95,7 @@
         margin-bottom: 60px;
     }
     .advantages{
-        margin-top: 700px;
+        margin-top: 650px;
     }
     .advantages__item{
     margin-top: 40px;
@@ -96,7 +104,6 @@
     .title{
         text-align: center;
     }
-
         
     .videobox{
         min-height: 300px;
@@ -208,6 +215,12 @@
         }
     }
 
+    .progress__top-img{
+        width: 400px;
+        height: 200px;
+        top: -50px; 
+        
+    }
 
 }
 
@@ -262,6 +275,9 @@
         }
     }
     
+    .advantages{
+        margin-top: 600px;
+    }
 }
 
 @media (max-width:920px){
@@ -327,6 +343,9 @@
             max-width: 200px;
         }
     }
+    .advantages{
+        margin-top: 550px;
+    }
 }
 
 @media (max-width:780px){
@@ -334,6 +353,8 @@
     .footer__menu-box{
         margin-top: 40px;
     }
+
+    
 
 }
 
@@ -357,8 +378,7 @@
             height: 5px;
             width: 30px;
             margin: 5px;
-            background-color: $text;
-            background-color: $red;
+            background-color: #f2726f;
         }
         border: 1px solid $text;
         margin-right: 0px;
@@ -380,11 +400,13 @@
                 text-align: center;
                 a{
                     width: 100%;
-                    color: $red;
+                    color: #f2726f;
                     padding: 15px 0px;
                     font-size: 14px;
                     line-height: 18px;
-                    
+                    &:hover{
+                        color: #f2726f;
+                    }
                 }
                 &+li{
                     margin-left: 0;
@@ -409,7 +431,10 @@
             padding: 50px 50px 50px;
         }
     }
-    
+    .progress__top-img{
+        display: none;
+        
+    }
     
 }
 @media (max-width:720px){
@@ -453,6 +478,9 @@
     .appointment__box-link{
         margin-top: 15px;
     }
+    .advantages{
+        margin-top: 500px;
+    }
 }
 
 @media (max-width:650px){
@@ -473,6 +501,24 @@
             width: 80px;
             height: 80px;
             @include ibg;
+        }
+    }
+}
+
+@media (max-width:610px){
+    .header__title{
+        margin-left: 10px;
+        color: $blue;
+        margin-top: 60px;
+        margin-bottom: 35px;
+    
+        &-name{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        &-city{
+            font-size: 20px;
+            line-height: 30px;
         }
     }
 }
@@ -523,7 +569,7 @@
 @media (max-width:560px){
     .header__title{
         margin-left: 10px;
-        color: $red;
+        color: $blue;
         margin-top: 60px;
         margin-bottom: 35px;
      
@@ -542,7 +588,6 @@
 
     .header{
         min-height: 400px;
-        
     }
     .header__inf{
         display: none;
@@ -591,6 +636,10 @@
         &__title{
             margin-bottom: 20px;
         }
+    }
+
+    .advantages{
+        margin-top: 400px;
     }
 }
 
@@ -708,11 +757,26 @@
             margin-bottom: 30px;
         }
     }
+    .advantages{
+        margin-top: 350px;
+    }
 }
 
 
-@media (max-width:354px){
-
+@media (max-width:350px){
+    .link__btn{
+        font-size: 10px;
+    }
+    .appointment__inf-title{
+        font-size: 25px;
+        text-shadow: #000 1px 1px 0, #000 -1px -1px 0, 
+      #000 -1px 1px 0, #000 1px -1px 0;
+    }
+    .appointment__inf-count{
+        color: $blue;
+        text-shadow: #fff 1px 1px 0, #fff -1px -1px 0, 
+      #fff -1px 1px 0, #fff 1px -1px 0;
+    }
 }
 
 
@@ -723,9 +787,8 @@
 @media (min-width: 751px){
     .header__menu-box{
         background: #fff;
-        
         margin-top: 80px;
-        border: 1px solid $red;
+        border: 1px solid #f2726f ;
     
     }
     .menu{
@@ -743,7 +806,7 @@
                     color: #000;
                     outline: none;
                     &:hover{
-                        background-color: rgba(195,11,11,1);
+                        background-color: #f2726f;
                         color: #fff;
                     }
                 }
